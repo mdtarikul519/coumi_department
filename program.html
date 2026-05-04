@@ -1,0 +1,426 @@
+# NGO Website (Header + About Us + Footer)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+.navbar{
+    background:#0b1f3a;
+    padding:18px 0;
+}
+
+.navbar .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.join-btn{
+    background:#ff6b00;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ABOUT SECTION */
+/* =========================
+   ABOUT SECTION
+========================= */
+/* =========================
+   PROGRAMS SECTION
+========================= */
+
+.programs-section{
+    position:relative;
+    padding:100px 0;
+    background:#ffffff;
+    overflow:hidden;
+}
+
+/* Background Shape */
+.program-shape{
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#0b1f3a10;
+    border-radius:50%;
+    bottom:-180px;
+    left:-120px;
+}
+
+/* SECTION HEADER */
+.section-header{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:70px;
+    position:relative;
+    z-index:2;
+}
+
+.section-tag{
+    display:inline-block;
+    background:#ff6b00;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.section-header h2{
+    font-size:48px;
+    color:#0b1f3a;
+    margin-bottom:20px;
+}
+
+.section-header p{
+    color:#666;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* PROGRAM GRID */
+.program-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    position:relative;
+    z-index:2;
+}
+
+/* CARD */
+.program-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:24px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    transition:0.4s;
+    border:1px solid #f0f0f0;
+}
+
+.program-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* ICON */
+.program-icon{
+    width:80px;
+    height:80px;
+
+    background:#fff3ea;
+    color:#ff6b00;
+
+    border-radius:20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+}
+
+/* CONTENT */
+.program-card h3{
+    font-size:28px;
+    color:#0b1f3a;
+    margin-bottom:18px;
+}
+
+.program-card p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+    font-size:16px;
+}
+
+/* LINK */
+.program-card a{
+    text-decoration:none;
+    color:#ff6b00;
+    font-weight:bold;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.program-card a:hover{
+    letter-spacing:1px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .program-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .section-header h2{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .programs-section{
+        padding:70px 0;
+    }
+
+    .program-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-header h2{
+        font-size:30px;
+    }
+
+    .program-card{
+        padding:30px 25px;
+    }
+
+}
+
+</style>
+
+
+<body>
+
+    <!-- 🔴 HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+
+                <div class="logo">NGO</div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="nav_right_button">
+                    <a href="#" class="join-btn">Join Us</a>
+                </div>
+
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            </div>
+        </nav>
+    </header>
+
+<!-- 🌟 PROGRAMS SECTION -->
+<section class="programs-section">
+
+    <!-- Background Shape -->
+    <div class="program-shape"></div>
+
+    <div class="container">
+
+        <!-- SECTION TITLE -->
+        <div class="section-header">
+
+            <span class="section-tag">
+                Our Programs
+            </span>
+
+            <h2>
+                Programs That Change Lives
+            </h2>
+
+            <p>
+                We work on education, healthcare, food support,
+                and community development to create a brighter future.
+            </p>
+
+        </div>
+
+        <!-- PROGRAM GRID -->
+        <div class="program-grid">
+
+            <!-- CARD 1 -->
+            <div class="program-card">
+
+                <div class="program-icon">
+                    🎓
+                </div>
+
+                <h3>Education Program</h3>
+
+                <p>
+                    Providing free education materials, scholarships,
+                    and learning support for underprivileged children.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="program-card">
+
+                <div class="program-icon">
+                    ❤️
+                </div>
+
+                <h3>Healthcare Support</h3>
+
+                <p>
+                    Organizing free medical camps and healthcare
+                    awareness programs in rural communities.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="program-card">
+
+                <div class="program-icon">
+                    🍲
+                </div>
+
+                <h3>Food Distribution</h3>
+
+                <p>
+                    Distributing food packages and emergency relief
+                    support during disasters and crises.
+                </p>
+
+                <a href="#">
+                    Read More →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- 🔵 FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-box">
+                    <h3>About Us</h3>
+                    <p>
+                        We are a non-profit organization working for education,
+                        health, and social development.
+                    </p>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Contact Info</h3>
+                    <p>📍 Dhaka, Bangladesh</p>
+                    <p>📞 +880 123 456 789</p>
+                    <p>📧 info@ngo.org</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 NGO Website. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

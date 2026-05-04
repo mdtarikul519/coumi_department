@@ -1,419 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NGO Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NGO Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-<!-- 🔴 HEADER / NAVBAR -->
-<header>
-    <nav class="navbar">
-        <div class="container">
+        <!-- 🔴 HEADER / NAVBAR -->
+        <header>
+            <nav class="navbar">
+                <div class="container">
 
-            <div class="logo">NGO</div>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-
-            <div class="nav_right_button">
-                <a href="#" class="join-btn">Join Us</a>
-            </div>
-
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-        </div>
-    </nav>
-</header>
-
-<!-- 🏠 HERO SECTION -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Together We Can Make a Difference</h1>
-        <p>Empowering communities through education, health, and social impact.</p>
-
-        <div class="hero-buttons">
-            <a href="#" class="btn join">Join Us</a>
-            <a href="#" class="btn donate">Donate Now</a>
-        </div>
-    </div>
-</section>
-
-<!-- 📌 ABOUT SECTION (separate block) -->
-<section class="about-preview">
-    <div class="container">
-        <h2>About Us</h2>
-        <p class="about-text">
-            We are a social development organization working for education, health and poverty reduction.
-        </p>
-        <button class="read-more">Read More</button>
-    </div>
-</section>
-
-
-
-<section class="activities">
-    <div class="container">
-        <h2 class="section-title">Our Activities</h2>
-
-        <div class="activity-grid">
-
-            <!-- Card 1 -->
-            <div class="activity-card">
-                <img src="https://via.placeholder.com/80" alt="Education Icon">
-                <h3>Education Program</h3>
-                <p>We provide free education support for underprivileged children.</p>
-                <a href="#" class="btn">View All</a>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="activity-card">
-                <img src="https://via.placeholder.com/80" alt="Health Icon">
-                <h3>Health Support</h3>
-                <p>Free medical camps and health awareness programs in rural areas.</p>
-                <a href="#" class="btn">View All</a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="activity-card">
-                <img src="https://via.placeholder.com/80" alt="Food Icon">
-                <h3>Food Distribution</h3>
-                <p>We distribute food among poor and disaster-affected people.</p>
-                <a href="#" class="btn">View All</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="projects">
-    <div class="container">
-        <h2 class="section-title">Featured Campaigns</h2>
-
-        <div class="project-grid">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x220" alt="Project Image">
-                <div class="project-content">
-                    <span class="status running">Running</span>
-                    <h3>Clean Water Project</h3>
-                    <p>Providing safe drinking water in rural villages across Bangladesh.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x220" alt="Project Image">
-                <div class="project-content">
-                    <span class="status featured">Featured</span>
-                    <h3>Education for All</h3>
-                    <p>Helping poor children get access to quality education and materials.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x220" alt="Project Image">
-                <div class="project-content">
-                    <span class="status running">Running</span>
-                    <h3>Food Relief Campaign</h3>
-                    <p>Distributing food packages for disaster affected families.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="blog-grid-section">
-    <div class="container">
-        <h2 class="section-title">Latest News & Blog</h2>
-
-        <div class="blog-grid-2col">
-
-            <!-- LEFT SIDE (3) -->
-            <div class="blog-column">
-
-                <div class="blog-item">
-                    <img src="https://via.placeholder.com/180x120">
-                    <div class="blog-info">
-                        <span class="date">Apr 20, 2026</span>
-                        <h3>Medical Camp Completed</h3>
-                        <p>Free health service for rural people.</p>
-                        <a href="#">Read More →</a>
+                    <div class="logo">
+                        <img height="80px" width="80px" src="image/logo.png"
+                            alt="NGO Logo">
+                        <h1>বাংলাদেশ কওমী ছাত্র পরিষদ</h1>
                     </div>
-                </div>
 
-                <div class="blog-item">
-                    <img src="https://via.placeholder.com/180x120">
-                    <div class="blog-info">
-                        <span class="date">Apr 15, 2026</span>
-                        <h3>Education Program Expands</h3>
-                        <p>New villages added in our project.</p>
-                        <a href="#">Read More →</a>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/program.html">Programs</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="/contuct.html">Contact</a></li>
+                    </ul>
+
+                    <div class="nav_right_button">
+                        <a href="#" class="join-btn">Join Us</a>
                     </div>
-                </div>
 
-                <div class="blog-item">
-                    <img src="https://via.placeholder.com/180x120">
-                    <div class="blog-info">
-                        <span class="date">Apr 10, 2026</span>
-                        <h3>Food Relief Support</h3>
-                        <p>Helping flood affected families.</p>
-                        <a href="#">Read More →</a>
-                    </div>
-                </div>
+                    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
+                </div>
+            </nav>
+        </header>
+
+        <!-- 🏠 HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+
+                <!-- <p>Empowering communities through education, health, and social
+                    impact.</p> -->
+
+                <div class="hero-buttons">
+                    <a href="#" class="btn join">Join Us</a>
+                    <a href="#" class="btn donate">Donate Now</a>
+                </div>
             </div>
-
-            <!-- RIGHT SIDE (3) -->
-            <div class="blog-column">
-
-                <div class="blog-item">
-                    <img src="https://via.placeholder.com/180x120">
-                    <div class="blog-info">
-                        <span class="date">Apr 08, 2026</span>
-                        <h3>Clean Water Project</h3>
-                        <p>Safe drinking water initiative started.</p>
-                        <a href="#">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="blog-item">
-                    <img src="https://via.placeholder.com/180x120">
-                    <div class="blog-info">
-                        <span class="date">Apr 05, 2026</span>
-                        <h3>Volunteer Training</h3>
-                        <p>New volunteers trained for field work.</p>
-                        <a href="#">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="blog-item">
-                    <img src="https://via.placeholder.com/180x120">
-                    <div class="blog-info">
-                        <span class="date">Apr 01, 2026</span>
-                        <h3>Winter Relief Distribution</h3>
-                        <p>Blankets distributed in cold areas.</p>
-                        <a href="#">Read More →</a>
-                    </div>
-                </div>
-
+        </section>
+<!-- 
+        📌 ABOUT SECTION (separate block) -->
+        <!-- <section class="about-preview">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="about-text">
+                    We are a social development organization working for
+                    education, health and poverty reduction.
+                </p>
+                <button class="read-more">Read More</button>
             </div>
+        </section> -->
 
-        </div>
+
+        <!-- About Section -->
+<section class="about-section">
+
+    <!-- Section Heading -->
+    <div class="section-title">
+        <h1>About Us</h1>
+        <p>Learn more about our mission and social activities</p>
     </div>
-</section>
 
-
-
-<section class="team">
     <div class="container">
-        <h2 class="section-title">Our Leadership Team</h2>
 
-        <div class="team-grid">
-
-            <!-- Member 1 -->
-            <div class="team-card">
-                <div class="img-box">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member">
-                </div>
-                <h3>Abdul Karim</h3>
-                <p>Founder & Director</p>
-            </div>
-
-            <!-- Member 2 -->
-            <div class="team-card">
-                <div class="img-box">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member">
-                </div>
-                <h3>Shahina Akter</h3>
-                <p>Program Manager</p>
-            </div>
-
-            <!-- Member 3 -->
-            <div class="team-card">
-                <div class="img-box">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member">
-                </div>
-                <h3>Mehedi Hasan</h3>
-                <p>Field Coordinator</p>
-            </div>
-
-            <!-- Member 4 -->
-            <div class="team-card">
-                <div class="img-box">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member">
-                </div>
-                <h3>Nusrat Jahan</h3>
-                <p>Health Officer</p>
-            </div>
-
+        <!-- Left Image -->
+        <div class="about-image">
+            <img src="image/blog1.jpg" alt="About NGO">
         </div>
-    </div>
-</section>
 
+        <!-- Right Content -->
+        <div class="about-content">
 
-<section class="cta-banner">
-    <div class="container">
-        <div class="cta-content">
+            <span class="about-subtitle">Who We Are</span>
 
-            <h2>Join Our Mission To Make A Difference</h2>
+            <h2>Helping People & Building Better Futures</h2>
+
             <p>
-                Together we can bring education, health support, and hope to underprivileged communities.
-                Your small step can change many lives.
+                We are a non-profit social development organization working for
+                education, healthcare, poverty reduction, and community support.
+                Our mission is to create positive change and improve lives
+                through sustainable development programs.
             </p>
 
-            <div class="cta-buttons">
-                <a href="#" class="btn volunteer">Become a Volunteer</a>
-                <a href="#" class="btn donate">Donate Now</a>
-            </div>
+            <div class="about-boxes">
 
-        </div>
-    </div>
-</section>
-
-
-<section class="contact-section">
-    <div class="container">
-
-        <div class="contact-header">
-            <h2>Contact Us</h2>
-            <p>We’d love to hear from you. Get in touch with us anytime.</p>
-        </div>
-
-        <div class="contact-grid">
-
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <h3>Send Message</h3>
-
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Subject">
-                    <textarea rows="5" placeholder="Your Message"></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <h3>Get in Touch</h3>
-
-                <p>📍 Dhaka, Bangladesh</p>
-                <p>📞 +880 123 456 789</p>
-                <p>📧 info@ngo.org</p>
-
-                <div class="info-box">
-                    <h4>Office Hours</h4>
-                    <p>Sat - Thu: 9:00 AM - 6:00 PM</p>
+                <div class="box">
+                    <h3>500+</h3>
+                    <p>Children Supported</p>
                 </div>
 
-                <!-- Map -->
-                <div class="map">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0"
-                        allowfullscreen>
-                    </iframe>
+                <div class="box">
+                    <h3>120+</h3>
+                    <p>Volunteer Members</p>
                 </div>
+
             </div>
+
+            <button class="about-btn">Read More</button>
 
         </div>
 
     </div>
 </section>
 
+        <section class="activities">
+            <div class="container">
+                <h2 class="section-title">Our Activities</h2>
 
+                <div class="activity-grid">
 
+                    <!-- Card 1 -->
+                    <div class="activity-card">
+                        <img src="image/activities1.jpg"
+                            alt="Education Icon">
+                        <h3>Education Program</h3>
+                        <p>We provide free education support for underprivileged
+                            children.</p>
+                        <a href="#" class="btn">View All</a>
+                    </div>
 
+                    <!-- Card 2 -->
+                    <div class="activity-card">
+                        <img src="image/activities2.jpg"
+                            alt="Health Icon">
+                        <h3>Health Support</h3>
+                        <p>Free medical camps and health awareness programs in
+                            rural areas.</p>
+                        <a href="#" class="btn">View All</a>
+                    </div>
 
+                    <!-- Card 3 -->
+                    <div class="activity-card">
+                        <img src="image/activities1.jpg"
+                            alt="Food Icon">
+                        <h3>Food Distribution</h3>
+                        <p>We distribute food among poor and disaster-affected
+                            people.</p>
+                        <a href="#" class="btn">View All</a>
+                    </div>
 
-
-<footer class="footer">
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <!-- About / Info -->
-            <div class="footer-box">
-                <h3>About Us</h3>
-                <p>
-                    We are a non-profit organization working for education, health,
-                    and social development to improve lives in rural areas.
-                </p>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="footer-box">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="footer-box">
-                <h3>Contact Info</h3>
-                <p>📍 Dhaka, Bangladesh</p>
-                <p>📞 +880 123 456 789</p>
-                <p>📧 info@ngo.org</p>
-
-                <div class="social-icons">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">YouTube</a>
                 </div>
             </div>
+        </section>
 
-            <!-- Newsletter -->
-            <div class="footer-box">
-                <h3>Newsletter</h3>
-                <p>Subscribe to get latest updates</p>
+        <section class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Campaigns</h2>
 
-                <form>
-                    <input type="email" placeholder="Your Email">
-                    <button type="submit">Subscribe</button>
-                </form>
+                <div class="project-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="image/projects1.jpg"
+                            alt="Project Image">
+                        <div class="project-content">
+                            <span class="status running">Running</span>
+                            <h3>Clean Water Project</h3>
+                            <p>Providing safe drinking water in rural villages
+                                across Bangladesh.</p>
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="image/projects2.jpg"
+                            alt="Project Image">
+                        <div class="project-content">
+                            <span class="status featured">Featured</span>
+                            <h3>Education for All</h3>
+                            <p>Helping poor children get access to quality
+                                education and materials.</p>
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="image/projects1.jpg"
+                            alt="Project Image">
+                        <div class="project-content">
+                            <span class="status running">Running</span>
+                            <h3>Food Relief Campaign</h3>
+                            <p>Distributing food packages for disaster affected
+                                families.</p>
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-        </div>
+        <section class="blog-grid-section">
+            <div class="container">
+                <h2 class="section-title">Latest News & Blog</h2>
 
-        <div class="footer-bottom">
-            <p>© 2026 NGO Website. All Rights Reserved.</p>
-        </div>
+                <div class="blog-grid-2col">
 
-    </div>
-</footer>
+                    <!-- LEFT SIDE (3) -->
+                    <div class="blog-column">
 
+                        <div class="blog-item">
+                            <img src="image/blog1.jpg">
+                            <div class="blog-info">
+                                <span class="date">Apr 20, 2026</span>
+                                <h3>Medical Camp Completed</h3>
+                                <p>Free health service for rural people.</p>
+                                <a href="#">Read More →</a>
+                            </div>
+                        </div>
 
+                        <div class="blog-item">
+                            <img src="image/blog2.jpg">
+                            <div class="blog-info">
+                                <span class="date">Apr 15, 2026</span>
+                                <h3>Education Program Expands</h3>
+                                <p>New villages added in our project.</p>
+                                <a href="#">Read More →</a>
+                            </div>
+                        </div>
 
-<script>
+                        <div class="blog-item">
+                            <img src="image/blog3jpg">
+                            <div class="blog-info">
+                                <span class="date">Apr 10, 2026</span>
+                                <h3>Food Relief Support</h3>
+                                <p>Helping flood affected families.</p>
+                                <a href="#">Read More →</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT SIDE (3) -->
+                    <div class="blog-column">
+
+                        <div class="blog-item">
+                            <img src="image/blog1.jpg">
+                            <div class="blog-info">
+                                <span class="date">Apr 08, 2026</span>
+                                <h3>Clean Water Project</h3>
+                                <p>Safe drinking water initiative started.</p>
+                                <a href="#">Read More →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-item">
+                            <img src="image/blog2.jpg">
+                            <div class="blog-info">
+                                <span class="date">Apr 05, 2026</span>
+                                <h3>Volunteer Training</h3>
+                                <p>New volunteers trained for field work.</p>
+                                <a href="#">Read More →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-item">
+                            <img src="image/blog1.jpg">
+                            <div class="blog-info">
+                                <span class="date">Apr 01, 2026</span>
+                                <h3>Winter Relief Distribution</h3>
+                                <p>Blankets distributed in cold areas.</p>
+                                <a href="#">Read More →</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <h2 class="section-title">Our Leadership Team</h2>
+
+                <div class="team-grid">
+
+                    <!-- Member 1 -->
+                    <div class="team-card">
+                        <div class="img-box">
+                            <img src="image/ledership.jpg"
+                                alt="Team Member">
+                        </div>
+                        <h3>Abdul Karim</h3>
+                        <p>Founder & Director</p>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="team-card">
+                        <div class="img-box">
+                            <img src="image/ledership.jpg"
+                                alt="Team Member">
+                        </div>
+                        <h3>Shahina Akter</h3>
+                        <p>Program Manager</p>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="team-card">
+                        <div class="img-box">
+                            <img src="image/ledership.jpg"
+                                alt="Team Member">
+                        </div>
+                        <h3>Mehedi Hasan</h3>
+                        <p>Field Coordinator</p>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="team-card">
+                        <div class="img-box">
+                            <img src="image/ledership.jpg"
+                                alt="Team Member">
+                        </div>
+                        <h3>Nusrat Jahan</h3>
+                        <p>Health Officer</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
+                <div class="cta-content">
+
+                    <h2>Join Our Mission To Make A Difference</h2>
+                    <p>
+                        Together we can bring education, health support, and
+                        hope to underprivileged communities.
+                        Your small step can change many lives.
+                    </p>
+
+                    <div class="cta-buttons">
+                        <a href="#" class="btn volunteer">Become a Volunteer</a>
+                        <a href="#" class="btn donate">Donate Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+
+                <div class="contact-header">
+                    <h2>Contact Us</h2>
+                    <p>We’d love to hear from you. Get in touch with us
+                        anytime.</p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3>Send Message</h3>
+
+                        <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email"
+                                required>
+                            <input type="text" placeholder="Subject">
+                            <textarea rows="5"
+                                placeholder="Your Message"></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="info-left">
+                            <h3>Get in Touch</h3>
+
+                            <p>📍 Dhaka, Bangladesh</p>
+                            <p>📞 +880 123 456 789</p>
+                            <p>📧 info@ngo.org</p>
+
+                            <div class="info-box">
+                                <h4>Office Hours</h4>
+                                <p>Sat - Thu: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+
+                        <!-- Map Right Side -->
+                        <div class="map">
+                            <iframe
+                                src="https://maps.google.com/maps?q=dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer-grid">
+
+                    <!-- About / Info -->
+                    <div class="footer-box">
+                        <h3>About Us</h3>
+                        <p>
+                            We are a non-profit organization working for
+                            education, health,
+                            and social development to improve lives in rural
+                            areas.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-box">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Programs</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-box">
+                        <h3>Contact Info</h3>
+                        <p>📍 Dhaka, Bangladesh</p>
+                        <p>📞 +880 123 456 789</p>
+                        <p>📧 info@ngo.org</p>
+
+                        <div class="social-icons">
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer-box">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to get latest updates</p>
+
+                        <form>
+                            <input type="email" placeholder="Your Email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 NGO Website. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </footer>
+
+        <script>
 function toggleMenu(){
     document.getElementById("navLinks").classList.toggle("active");
 }
 </script>
 
-</body>
+    </body>
 </html>

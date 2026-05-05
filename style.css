@@ -822,6 +822,140 @@
 
 
 
+  .info-section{
+      width:100%;
+      padding:80px 20px;
+    }
+
+    .info-container{
+      max-width:1150px;
+      margin:auto;
+
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:35px;
+    }
+
+    .info-card{
+      height:180px;
+      border-radius:18px;
+      padding:35px 40px;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+
+      text-decoration:none;
+      transition:0.3s;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .info-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .info-card h2{
+      font-size:42px;
+      font-weight:500;
+      line-height:1.2;
+    }
+
+    .arrow{
+      font-size:70px;
+      color:#fff;
+      line-height:1;
+      align-self:flex-end;
+    }
+
+    /* Card Colors */
+    .card1{
+      background:#10a8df;
+      color:#fff;
+    }
+
+    .card2{
+      background:#0f4b86;
+      color:#fff;
+    }
+
+    .card3{
+      background:#c7d8ec;
+      color:#0f4b86;
+    }
+
+    .card4{
+      background:#ef3a3a;
+      color:#fff;
+    }
+
+    /* Tablet */
+    @media(max-width:992px){
+
+      .info-card{
+        height:160px;
+        padding:30px;
+      }
+
+      .info-card h2{
+        font-size:34px;
+      }
+
+      .arrow{
+        font-size:60px;
+      }
+    }
+
+    /* Mobile */
+    @media(max-width:768px){
+
+      .info-container{
+        grid-template-columns:1fr;
+      }
+
+      .info-card{
+        height:140px;
+        border-radius:14px;
+      }
+
+      .info-card h2{
+        font-size:30px;
+      }
+
+      .arrow{
+        font-size:52px;
+      }
+    }
+
+    /* Small Mobile */
+    @media(max-width:480px){
+
+      .info-section{
+        padding:50px 15px;
+      }
+
+      .info-card{
+        height:120px;
+        padding:22px;
+      }
+
+      .info-card h2{
+        font-size:24px;
+      }
+
+      .arrow{
+        font-size:42px;
+      }
+    }
+
+
+
+
+
+
+
+
+
 /* CONTACT SECTION */
 .contact-section{
     padding:52px 0 62px;
